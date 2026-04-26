@@ -1,0 +1,24 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f7fcff;color:#123;line-height:1.6}
+.navbar{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#ffffffdd;backdrop-filter:blur(12px);z-index:1000}
+.logo{font-size:1.6rem;font-weight:700}.logo span{color:#2db7c4}
+nav a{margin:0 12px;text-decoration:none;color:#123}
+.btn{background:#2db7c4;color:white;padding:12px 22px;border-radius:30px;text-decoration:none;transition:.3s}
+.btn:hover{transform:translateY(-3px)}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:90px 8%;gap:40px}
+.hero h1{font-size:3rem;margin-bottom:16px}
+.hero-image img,.split img,.gallery img,.team img{width:100%;border-radius:22px;object-fit:cover;box-shadow:0 20px 40px rgba(0,0,0,.12)}
+.section{padding:80px 8%;text-align:center}
+.grid{display:grid;gap:24px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:white;padding:28px;border-radius:22px;box-shadow:0 12px 28px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);padding:50px 8%;text-align:center;background:#e9f9fb}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;text-align:left}
+.gallery{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.team{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.testimonial{background:#2db7c4;color:white;border-radius:30px;margin:40px 8%}
+footer{text-align:center;padding:40px;background:#123;color:white}
+.reveal{opacity:0;transform:translateY(50px);transition:1s}
+.reveal.active{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.hero,.split{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
